@@ -12,25 +12,29 @@
 <body>
     <div class="container">
         <div class="img">
-            <!-- <img src="img/bgImage.svg" alt=""> -->
+            <img src="img/bgImage.svg" alt="">
         </div>
         <div class="container-form flex">
             <div class="text-form">
                 <h1>Login to your Account</h1>
                 <h6>See whats is goin on with your business</h6>
                 <span>------------- or Sign in with Email -------------</span>
+                <button id="google-login" class="flex">
+                    <img src="img/google-icon.svg" alt="icone do google">
+                    <span>Continue with Google</span>
+                </button>
             </div>
 
             <form id="formulario" class="flex">
                 
                 <div class="container-input">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="mail@abc.com">
+                    <input type="email" id="email" autocomplete="off" placeholder="mail@abc.com">
                 </div>
 
                 <div class="container-input">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="mail@abc.com">
+                    <input type="password" id="password" placeholder="*******">
 
                     <div id="help-password">
                         <div id="container-remember">
@@ -38,12 +42,17 @@
                             <label for="remember">Remember Me</label>
                         </div>
 
-                        <div id="forgot">
+                        <div class="forgot">
                             <a href="#">Forgot Password?</a>
                         </div>
                     </div>
                 </div>
+
                 <button type="submit">Login</button>
+                <span class="forgot">
+                    not registered yet?
+                    <a href="#">Create an account</a>
+                </span>
                
             </form>
         </div>
